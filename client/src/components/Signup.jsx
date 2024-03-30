@@ -142,7 +142,7 @@ const Signup = () => {
         const hashedPassword = await bcrypt.hash(password, 10); // 10 is the saltRounds
 
         // Send the hashed password to the backend along with other data
-        axios.post("http://localhost:3001/", { name, email, password: hashedPassword, faceVector })
+        axios.post("https://face-det-server.vercel.app/", { name, email, password: hashedPassword, faceVector })
         .then(result => {console.log(result)
         navigate('/login')
         })

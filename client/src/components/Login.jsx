@@ -133,7 +133,7 @@ const Login = () => {
             alert("Please enter a valid email address");
             return;
           }
-          axios.post('http://localhost:3001/loginface', { email, faceVector })
+          axios.post('https://face-det-server.vercel.app/loginface', { email, faceVector })
           .then(response => {
             if (response.data.success) {
               // Authentication successful, navigate to home page
