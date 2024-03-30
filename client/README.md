@@ -30,7 +30,7 @@ I used .env files to keep my api keys private (add mongodb url to a .env file in
     "react-dom": "^18.2.0",
     "react-dotenv": "^0.1.3",
     "react-router-dom": "^6.22.3"
-### Install following dependencies for the backend:
+### Install following dependencies for the backend after running npm init:
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
@@ -42,6 +42,9 @@ I used .env files to keep my api keys private (add mongodb url to a .env file in
     "mongoos": "^0.0.1-security",
     "mongoose": "^8.2.4",
     "nodemon": "^3.1.0"
+
+### Add this in package.json of backend directory to run nodemon
   
+![image](https://github.com/adithya-902/face_det/assets/74303205/40396ea9-875f-4656-bb5e-b2c57975b044)
 
 
