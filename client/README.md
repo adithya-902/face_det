@@ -7,10 +7,15 @@ The app uses the api as a method of signing in.
 
 After the initial sign in (Where the user provides the model the facial descriptors), during sign in the app checks if the face descriptors match the one for the email. 
 If they are a match you can move on to the home page. Otherwise you'll have to retry.
+
 I have used bcrypt library to hash encode the passwords so that it does not show up in the console or database.
+
 I have used vite along with react to speed up the development process.
+
 This project uses native css as anything else would have been overkill for a project of this scale.
+
 I used axios library to communicate with the backend.
+
 I used .env files to keep my api keys private (add mongodb url to a .env file in the root directory of server as DB).
 
 ### Install following dependencies for the frontend: 
