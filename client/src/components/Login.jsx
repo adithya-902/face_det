@@ -125,7 +125,9 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        
+        if (faceVector === null) {
+          alert("Make sure your face is detected in the webcam")
+        } else {
           const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
           if (!email || !emailRegex.test(email)) {
             alert("Please enter a valid email address");
@@ -146,6 +148,10 @@ const Login = () => {
             console.error('Error:', error);
             alert('Internal server error');
             });
+        }
+
+        
+          
         
     }
 

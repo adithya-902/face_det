@@ -62,6 +62,9 @@ app.post('/', (req, res) => {
 app.post('/loginface', async (req, res) => {
     const { email, faceVector } = req.body;
     try {
+        if (faceVector===null) {
+            return res.status(400).json({ success: false, message: 'invalid' });
+        }
         // Find user by email
         const user = await userAuth.findOne({ email });
         if (!user) {
